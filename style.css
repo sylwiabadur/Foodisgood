@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script:400,700');
+body {
+    background-color: white;
+    color: #111;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.part {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.part .limit {
+    width: 960px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.first {
+    background-image: url(img/pexels-photo-106251.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+.menu {
+    background-color: rgba(255, 255, 255, 0.70);
+}
+
+.menu :only-child {
+    position: relative;
+    top: 0;
+    left: 0;
+    color: #111;
+    font-size: 18px;
+    overflow: auto;
+    padding: 12 0;
+}
+
+.menu .left {
+    float: left;
+    position: relative;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.menu .right {
+    float: right;
+    position: relative;
+}
+
+.menu .button {
+    text-decoration: none;
+    color: inherit;
+    padding: 0 4;
+    border-right: dotted #111 1px;
+}
+
+.menu .button:last-child {
+    border-right: none;
+}
+
+.first .text {
+    font-size: 200px;
+    color: white;
+    font-family: 'Indie Flower', cursive;
+}
+
+.triangle {
+    background-color: white;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 50%) rotateZ(45deg);
+}
+
+.second {
+    height: 70vh;
+    background-color: white;
+}
+
+.textcenter {
+    width: calc(100% - 40px);
+}
+
+.twin {
+    float: left;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    position: relative;
+    font-size: 15px;
+    font-style: italic;
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+}
+
+.twin:last-child img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#raspberry {
+    width: 300px;
+    height: auto;
+    transform: translate(0, -50%);
+}
+
+#berries {
+    width: 250px;
+    height: auto;
+    transform: translate(50%, 0);
+}
+
+.third {
+    height: 70vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.triangleup {
+    background-color: white;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, -50%) rotateZ(45deg);
+    z-index: 100;
+}
+
+#one {
+    background-image: url(img/food.jpg);
+}
+
+#two {
+    background-image: url(img/food-dinner-lemon-rice.jpg);
+}
+
+#three {
+    background-image: url(img/pexels-photo-65131.jpeg);
+}
+
+.tile {
+    margin: 10px;
+    width: calc(33% - 20px);
+    float: left;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.40);
+    background-blend-mode: multiply;
+}
+
+.tile::before {
+    content: '';
+    padding-top: 100%;
+    display: inline-block;
+}
+
+.frame {
+    background-color: white;
+    width: 70%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.frame h1 {
+    text-align: center;
+    margin: 40px 5px 0px 5px;
+}
+
+.frame p {
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
