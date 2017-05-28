@@ -107,6 +107,7 @@ body {
 h1 {
     font-family: 'Dancing Script', cursive;
     font-size: 40px;
+    color: brown;
 }
 
 .twin:last-child img {
@@ -182,14 +183,18 @@ h1 {
     font-weight: bold;
 }
 
+.fourth h1,
 .frame h1 {
     text-align: center;
     margin: 40px 5px 0px 5px;
 }
 
+.fourth p,
 .frame p {
     margin-top: 0;
     margin-bottom: 40px;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .center {
@@ -197,4 +202,56 @@ h1 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.fourth {
+    font-size: 30px;
+}
+
+.icons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.icons>div img {
+    max-width: 120px;
+    padding: 10px;
+}
+
+.icons>div {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.newp {
+    font-size: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    text-transform: none!important;
+}
+
+.icons p {
+    margin: 2px 2px;
+}
+
+.icons p:nth-child(2) {
+    color: brown;
+    font-size: 25px;
+}
+
+#fifth {
+    background-image: url("img/pexels-photo-177676.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.40);
+    background-blend-mode: multiply;
+}
+
+.fourth {
+    margin-bottom: 40px!important;
+}
+
+#fifth .frame {
+    max-width: 30%;
 }
