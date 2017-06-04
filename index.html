@@ -128,32 +128,60 @@
         </div>
     </div>
     <div class="part">
-        <div  class="limit">
-        <div class="square" id="menu">
-            <div class="frame center">
-                <div class="bla">
-                <h1>Our </h1>
-                <p>Menu</p>
+        <div class="limit">
+            <div class="square" id="menu">
+                <div class="frame center">
+                    <div class="bla">
+                        <h1>Our </h1>
+                        <p>Menu</p>
+                    </div>
+                </div>
+            </div>
+            <div class="square">
+                <div class="frame" id="dishes">
+                    <h1>Delicious</h1>
+                    <p>Dishes</p>
+                    <p class="newp">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a dignissim turpis. Donec sapien urna, facilisis id cursus eu, fermentum et massa. Aliquam malesuada tortor eget convallis tristique. Donec non mi a sapien rutrum malesuada. Aenean vel purus
+                        ut mi volutpat fringilla quis non nibh. Praesent hendrerit, justo vitae elementum eleifend, dolor tortor faucibus arcu, a commodo arcu lacus ac sem. Curabitur non nulla iaculis, congue sapien sit amet, convallis lorem.
+                    </p>
+                    <p>
+                        <a class="click" href="#p2">
+                    click here
+                </a>
+                    </p>
                 </div>
             </div>
         </div>
-        <div class="square">
-            <div class="frame" id="dishes">
-                <h1>Delicious</h1>
-                <p>Dishes</p>
-                <p class="newp">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a dignissim turpis. Donec sapien urna, facilisis id cursus eu, fermentum et massa. Aliquam malesuada tortor eget convallis tristique. Donec non mi a sapien rutrum malesuada. Aenean vel purus ut mi volutpat fringilla quis non nibh. Praesent hendrerit, justo vitae elementum eleifend, dolor tortor faucibus arcu, a commodo arcu lacus ac sem. Curabitur non nulla iaculis, congue sapien sit amet, convallis lorem. 
-                </p>
-                <p>
-                <a class="click" href="#p2">
-                    click here
-                </a>
-                </p>
-            </div>
-            
+    </div>
+    <div class="map part" id="mapa">
+        <div id="truemapa"></div>
+        <div class="frame center">
+            <h1>Our</h1>
+            <p>Location</p>
         </div>
     </div>
-    </div>
+    <script>
+        function initMap() {
+            // Create a map object and specify the DOM element for display.
+            var myLatlng = new google.maps.LatLng(51.823532, 20.166201);
+            var map = new google.maps.Map(document.getElementById('truemapa'), {
+                center: {
+                    lat: 51.82,
+                    lng: 20.19
+                },
+                scrollwheel: false,
+                zoom: 14
+            });
+            var marker = new google.maps.Marker({
+                position: myLatlng,
+                title: "My location!"
+            });
+            marker.setMap(map);
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBnQe9GC633GEHkCWjyGqVCSvLdNxow26g&callback=initMap" async defer></script>
+
 </body>
 
 </html>
