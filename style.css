@@ -89,8 +89,9 @@ body {
 }
 
 .second {
-    height: 450px;
+    height: 560px;
     background-color: white;
+    display: flex;
 }
 
 .textcenter {
@@ -262,4 +263,66 @@ h1 {
 
 #fifth .frame {
     max-width: 30%;
+}
+.square
+{
+    width: 48%;
+    float: left;
+    display: flex;
+    position: relative;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.square:first-child
+{
+    margin-right: 1%;
+}
+.square:last-child
+{
+    margin-left: 1%;
+}
+.square:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+#menu
+{
+    background-image: url(img/food.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.20);
+    background-blend-mode: multiply;
+    
+}
+.square .frame
+{
+    width:220px;
+    height: 220px;
+    display: table;
+}
+.bla{
+    vertical-align: middle;
+    display: table-cell;
+}
+#dishes
+{
+    width:100%;
+}
+.click
+{
+ text-decoration: none;
+ color: black;
+ padding: 3 8px;
+ border: 2px solid grey;
+ font-size: 26px;
+  transition: all 0.3s;
+  transform: translateY(0);
+  display: inline-block;
+}
+.click:hover
+{
+    background-color: lightgray;
+    transform: translateY(10px);
 }
