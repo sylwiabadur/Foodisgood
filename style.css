@@ -374,6 +374,10 @@ h3 {
     font-style: normal;
 }
 
+#gourmet h2 {
+    padding-top: 1%;
+}
+
 #gourmet {
     height: 50%;
     font-style: italic;
@@ -382,6 +386,7 @@ h3 {
 #newsletter {
     font-size: 30px;
     letter-spacing: 5px;
+    transition: all 0.3s;
 }
 
 h3 {
@@ -406,4 +411,9 @@ h3 {
     text-align: center;
     color: white;
     padding-top: 20px;
+}
+
+i:hover {
+    font-size: 35px;
+    color: #aaaaaa;
 }
